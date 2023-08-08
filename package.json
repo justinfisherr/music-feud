@@ -1,0 +1,24 @@
+{
+  "name": "music-feud",
+  "version": "1.0.0",
+  "description": "Musical Family Feud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm run build",
+    "start": "node ./_dist/server",
+    "build": "rimraf dist && npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "prompt-sync": "^4.2.0",
+    "rifraf": "^2.0.3",
+    "rimraf": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.0"
+  }
+}
